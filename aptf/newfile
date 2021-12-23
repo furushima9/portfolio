@@ -1,224 +1,128 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb:http://ogp.me/ns/fb#">
 
+<head>
+    <!-- OGP設定 -->
+    <meta property="og:title" content="watadamura植物園website">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="へんてこでポップなバンドのオフィシャルWEBサイト。">
+    <meta property="og:url" content="https://asukas-ueda.github.io/bandofficial/.">
+    <meta property="og:site_name" content="へんてコりん official website">
+    <meta property="og:image" content="https://asukas-ueda.github.io/bandofficial/img/hentekorin_ogp.png">
+    <!-- Facebook -->
+    <meta property="fb:app_id">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-/*ヘッダー*/
-header{
-    height:90px;
-    background-color: white;
-    top:0;
-    z-index: 10;
-    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-}
-header h1{
-    margin-left:30px;
-    float: left;
-}
+    <title>野鳥ともの会website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
 
-.pfix{
-    width: 100%;
-    position: fixed;
-}
+<body>
+    <header class="pfix">
+        <h1>
+            <a href="index.html">
+                <picture>
+                    <source media="(max-width:480px)" srcset="img/wb3.png">
+                    <img src="img/ytyX2b.png" alt="hentekorin">
+                </picture>
+            </a>
+        </h1>
 
-.nav{
-    font-family: 'Comic Sans MS';
-    margin: 50px 20px 0;
-    list-style: none;
-    float: right;
-}
+        <div class="navArea">
+            <nav class="nav" id="nav_f">
+                <ul>
+                    <!--<li><a href="news.html">NEWS</a></li>
+                        <li><a href="live.html">LIVE</a></li>-->
+                    <li><a href="profile.html">クラブについて</a></li>
+                    <li><a href="discography.html">村で見られる野鳥</a></li>
+                    <li><a href="contact.php">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <div id="target">
+                <div class="target_inner">
+                    <span class="target_inner_line target_inner_1" id="line1"></span>
+                    <span class="target_inner_line target_inner_2" id="line2"></span>
+                    <span class="target_inner_line target_inner_3" id="line3"></span>
+                </div>
+            </div>
 
-.nav li{
-    padding-left: 30px;
-    text-align: center;
-    display: inline-block;
-}
+            <script src="js/jquery-3.5.0.min.js"></script>
+            <script type="text/javascript" src="js/drawer.js"></script>
+        </div>
+    </header>
 
-.nav li a{
-    color: black;
-    font-weight: bold;
-    display: block;
-    text-decoration: none;
-}
+    <main>
+        <div class="header">
+            <h1>わただ村立野鳥クラブ</h1>
+        </div>
 
-.nav li a:hover{
-    color: #a9a9a9;
-    border-bottom: solid 4px #db7093;
-}
+        <div class="main_content clearfix">
+            <div class="mainbox">
+                <section class="news">
+                    <h2>告知</h2>
+                    <div class="news_wrapper">
+                        <ul class="news_list">
+                            <li><a href="#">
+                                    <p class="date">2020.04.01</p>
+                                    <div class="news_info">
+                                        <p class="title">4月10日（金）am8:00〜　野鳥祭り　重大発表！！YouTubeで生放送！</p>
+                                    </div>
+                                </a>
+                            </li>
 
-/*メニューアイコン*/
-#target{
-    display: none;
-}
+                            <li><a href="#">
+                                    <p class="date">2020.03.18</p>
+                                    <div class="news_info">
+                                        <p class="title">3月28日（土）村長選挙。無投票当選❣　村長の伝記大発売❣</p>
+                                    </div>
+                                </a>
+                            </li>
 
-/*メイン*/
-body,main{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-}
+                            <li><a href="#">
+                                    <p class="date">2020.03.17</p>
+                                    <div class="news_info">
+                                        <p class="title">3月1７日（金）村民住宅 販売開始！！ネット販売も受付中！！</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
 
-main{
-    font-family: 'ヒラギノ丸ゴ Pro W4','Hiragino Maru Gothic Pro';
-    clear: both;
-}
+            <div class="mainbox">
+                <section class="disc">
+                    <h2>交通機関</h2>
+                    <h3>わただ鉄道</h3>
+                    <a href="#"><img src="https://github.com/furushima9/aptf/blob/master/img/Tetudou.jpg" alt="muranohana"></a>
+                    <p><span class="cate">最寄り駅</span> 深山駅</p>
+                </section>
+            </div>
 
-.header{
-    height: 700px;
-    background-image: url("../img/renjaku.jpg");
-   background-size: cover;
-    position: relative;
-    margin-top: 10px;
-    display: block;
-    margin: 10% 3% 3% 3%;
+            <div class="mainbox">
+                <section class="movie">
+                    <h2>村の全景</h2>
+                    <a href="#"><img src="img/mura5.jpg" alt="muranohana"></a>
+                    <p>静かな山谷</p>
+                </section>
+            </div>
+        </div>
+    </main>
 
-}
+    <footer>
+        <p>yatyouclub official</p>
+        <div class="snsbtn clearfix">
+            <a href="#"><img src="img/twitter_btn.png"></a>
+            <a href="#"><img src="img/facebook_btn.png"></a>
+            <a href="#"><img src="img/instagram_btn.png"></a>
+        </div>
+    </footer>
+</body>
 
-.header h1{
-	color: white;
-    font-size: 60px;
-    font-family: 'Comic Sans MS';
-    opacity: 0.5;
-    position: absolute;
-    top: 200px;
-    padding-left: 20px;
-}
-
-
-/*メインコンテンツ*/
-.main_content{
-    background-color: #C7E6E2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    height:50%;
-    padding: 30px 0 30px;
-}
-
-.main_content h2{
-    font-family: 'ヒラギノ角ゴ Pro W6','HiraKakuPro-W6';
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.mainbox{
-    background-color: #ffffff;
-    width: 30%;
-    margin: 0 auto;
-    padding-bottom: 10px;
-}
-/*ニュース*/
-.news_wrapper{
-    margin: 0 auto;
-    text-align: center;
-    display: block;
-}
-.news_list{
-    padding-left: 0;
-    list-style: none;
-    display: inline-block;
-}
-
-.news ul li{
-    text-align: left;
-}
-
-.news li{
-    padding: 10px 30px;
-    line-height: 15px;
-	display: inline-block;
-}
-
-.news li p{
-    line-height: 25px;
-}
-
-.news_list a{
-    color: black;
-    text-decoration: none;
-}
-
-.news_list a:hover{
-    color: #a9a9a9;
-}
-
-.title{
-    font-size: 14px;
-    border-bottom: dashed 2px #a9a9a9;
-}
-
-/*ディスク*/
-.disc{
-    text-align: center;
-}
-
-.disc img{
-    width:50%;
-}
-
-.disc img:hover{
-    opacity: 0.7;
-}
-
-.cate{
-    color: white;
-    background-color: #404040;
-    font-weight: bold;
-    border-radius: 5px;
-    padding: 0 20px;
-}
-
-/*ムービー*/
-.movie{
-    text-align: center;
-}
-
-.movie img{
-    width: 80%;
-    margin-top: 20px;
-}
-
-.movie img:hover{
-    opacity: 0.7;
-}
-
-/*フッター*/
-footer{
-    font-family: 'ヒラギノ丸ゴ Pro W4','Hiragino Maru Gothic Pro';
-    background-color: black;
-    width: 100%;
-    text-align: center;
-    margin-top: auto;
-    padding:30px 0;
-}
-
-footer p{
-    font-size: 18px;
-    font-weight: bold;
-    color: #ffffff;
-    margin-bottom: 10px;
-}
-
-.snsbtn img{
-    margin: 0 10px;
-}
-
-.snsbtn img:hover{
-    opacity: 0.7;
-}
-
-/*clearfixの設定*/
-.clearfix::after{
-    content: "";
-    display: block;
-    clear: both;
-}
+</html>
